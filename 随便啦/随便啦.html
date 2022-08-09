@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <title>🌻운수</title>
+
+    <!--CSS stylesheets-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="随便啦.css">
+    
+
+    <!--Boostrap Scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--Goole Fonts-->
+    <link rel="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+    <!-- Font Awesome-->
+    <script defer src="http://use.fontawesome.com/releases/v6.1.1/js/all.js"></script>
+    
+</head>
+
+
+<body>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+    <div class="navbar-header"><i class="fa-solid fa-feather-pointed"></i>18 Film Factory</div>
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <h4 class="text-white">Menu</h4>
+          <span class="text-muted">Toggleable via the navbar brand.</span>
+          <li>
+            <ul> <a href="#slide-book">Basic Information</a></ul>
+          </li>
+          <li>
+            <ul><a href="#Pricing">App</a></ul>
+          </li>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+    </div>
+</nav>
+
+  <section id="headline">
+    <div class="container-fluid">
+    <h1 id="welcome">Yun Shoo</h1>
+    <img src="https://pbs.twimg.com/media/ElHZ4FYUcAAWA-3?format=jpg&name=large" alt="face">
+    <hr>
+  </div>
+  </section>
+
+    <section id="slide-book">
+
+      <h1 class="title">All of her in cards</h1>
+      <div class="slider" x-data="{start: true, end: false}">
+      <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+
+      <div class="slider__item">
+        <img class="slider__image" src="https://images.unsplash.com/photo-1555448248-2571daf6344b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGFic3RyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Image">
+        <div class="slider__info">
+          <h2>欢迎查看艺人手册</h2>
+          <p><br>请向右划。</p>
+          <p>Please slide to the right.</p>
+        </div>
+      </div>
+
+      <div class="slider__item">
+        <div class="slider__info">
+          <h2>妘潏</h2>
+            <p><em>An Actress.</em> <strong>Big Star.</strong></p>
+            <p id="monv">“20世纪的最后一位荧屏魔女”</p>
+        </div>
+      </div>
+
+      <div class="slider__item">
+        <div class="slider__info">
+          <h2>Basic Info</h2>
+          <table>
+              <tr>
+                  <td>Name</td>
+                  <td>妘潏/운수/Yun Shoo</td>
+              </tr>
+              <tr>
+                  <td>Birthday</td>
+                  <td>1998.12.30</td>
+              </tr>
+              <tr>
+                  <td>Birth Place</td>
+                  <td>北国郡 素琼州</td>
+              </tr>
+              <tr>
+                  <td>Ethnic Group</td>
+                  <td>RUO</td>
+              </tr>
+              <tr>
+                  <td>Family</td>
+                  <td>Elder Sister</td>
+              </tr>
+              <tr>
+                  <td>School</td>
+                  <td>
+                      <li>Su-Qying Art Middle School (2010-2013)</li>
+                      <li>Northkok County Women Middle School (2013-2016)</li>
+                      <li>Faculty of Arts of National Freedom Women's University (2016-2020 Film Production)</li>
+                  </td>
+              </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="slider__item">
+        <div class="slider__info">
+          <h2>Her Experience</h2>
+              <p>潏于1998年11月26日出生在一个若族名门分支的家族。其曾祖母是大源王朝定武大皇之女正景女王的后代，后来被授予恩敬君的封号，在自由宪政战争之后改革成为平民若族，举家迁至南华地，家里代代从商。潏的生母与初婚丈夫离婚后，迁到北国郡再婚，在那里迎接了潏两媎妹的新生。</p>
+              <p>2010年，进入素琼州艺术中学读书。潏很热爱艺术创作，但是她的母亲认为她还是应该多进行文理科目的学习，潏遵从了母亲的想法，选择考取文理高中。2013年进入素有“若汀尽头唯一的女子文理圣殿”之称的北国郡女子中学读书，当时潏15岁，就开始离开了素琼州的家，到郡府千里城上学。也正是在北国女高，她结识了后来的新派独立剧作人姬渊。</p>
+              <p>2016年，她从北国女高毕业。也正是这一年夏天，她在路上被导演殷知琅（은지랑）挖掘， 并拍摄了第一部独立电影《俗》。尽管《俗》并没有取得什么反响，但是潏到底也在独立小型电影圈子里面有了姓名，认识了一些作家与导演。潏后来提到，独立小型电影在当时还是一种非常小众的戏剧文化，她只是把这次的拍摄后出演看作一次新奇的生活体验，为她将来进入艺术学院学习电影做一点有益的探索与尝试。
+                  2017年，她参与了《纵情无度》的制作与演出。</p>
+              <p>2018年，与业界有名的出品经纪label——18 Film Factory签约，成为其自2012年以来该社第一个纳入旗下的新艺人。签约后，出演电视剧《热带雨》，在里面饰演一个陷入不伦爱恋的日薄西山的家族里女儿，潏的电视剧初亮相当时收获了不小的瞩目。</p>
+              <p>因为《热带雨》这种悖德不伦题材的争议性，且潏在其中的演绎深入人心，《狂热分子》的机会找上门来。《狂热分子》一经播出，在butterfly tv上获得连续两月月榜第一和年榜第二的纪录，也创下了butterfly tv使用以来最快突破首日观看纪录的剧集。2020年年底，在butterfly fiesta上，潏获得“Butterfly Queen”的称号。</p>
+              <p>《污点爱人》正式打开了潏的演员之路。看到蜕变后的潏，曾经在北国女高的同窗、现的RTZTV的剧集制作人姬渊，向同性电影的“名家辣手”康夏容（강하용）倾情推荐了潏，康夏容便找到了潏，邀请她出演自己暌违5年的野心之作《恩典》。2022年，拍摄期长达6个月的艰苦旅途而孕育出来的电影《恩典》一经上映就大获成功，好评如潮。潏也凭借此片获得当年的女皇电影奖最佳女新人。</p>
+        </div>
+      </div>
+      
+      <div class="slider__item">
+        <div class="slider__info">
+          <h2>Movies</h2>
+          <p>2016 俗<br><br>2017 纵情无度<br><br>2021 深吻<br><br>2022 恩典</p>
+        </div>
+      </div>
+      <div class="slider__item">
+        <div class="slider__info">
+          <h2>Dramas</h2>
+          <p>2019 热带雨<br><br>2020 狂热分子<br><br>2023 全盛时代</p>
+        </div>
+      </div>
+      <div class="slider__item">
+        <div class="slider__info">
+          <h2>This is a card</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <div class="slider__info">
+          <h2>This is a card</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        <div class="slider__info">
+          <h2>This is a card</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+        
+        <div class="slider__info">
+          <h2>This is a card</h2>
+        </div>
+      </div>
+      <div class="slider__item">
+       
+        <div class="slider__info">
+          <h2>This is a card</h2>
+        </div>
+      </div>
+     
+    </div>
+    <div class="slider__nav">
+      <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Previous</button>
+      <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Next</button>
+    </div>
+  </div>
+    </section>
+
+    
+     
+        
+
+        
+   
+
+  <section id="pricing">
+    
+    <div class="pricing-column-header col-lg-6">
+      <div class="card">
+        <div class="card-header">
+          <h2>Get Pro</h2>
+          <p>Always enjoy your time with stars!</p>
+        </div>
+      </div>
+    </div>
+      
+    <div class="deck">
+    <div class="row">
+    
+    <div class="pricing-column col-lg-4 col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h3>Plan Plain</h3>
+        </div>
+        <div class="card-body">
+          <h4>$19 / mo</h4>
+          <p>Pro Account</p>
+          <p>The Fastest Info</p>
+        </div>
+        <div class="sign-up">
+          <button type="button" class="btn btn-lg btn-block btn-outline-success sign-up-bottom">sign up</button>
+        </div>
+      </div>
+    </div>
+          
+    <div class="pricing-column col-lg-4 col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h3>Plan Perfect</h3>
+        </div>
+        <div class="card-body">
+          <h4>$99 / yr</h4>
+          <p>Priority Functions</p>
+          <p>Unlimited Chats</p>
+        </div>
+        <div class="sign-up">
+          <button type="button" class="btn btn-lg btn-block btn-outline-success sign-up-bottom">sign up</button>
+        </div>
+       </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h3>Plan Forever</h3>
+        </div>
+        <div class="card-body">
+          <h4>$399 / Permanent</h4>
+          <p>Unlock All Usage</p>
+          <p>Used Forever Unless Cancel</p>
+        </div>
+        <div class="sign-up">
+          <button type="button" class="btn btn-lg btn-block btn-outline-success sign-up-bottom">sign up</button>
+        </div>
+       </div>
+    </div>
+
+  </div>
+  </div>
+  <div>
+    <button type="button" class="btn btn-outline-success download-buttom"><i class="fa-brands fa-google-play"></i>Download</button>
+    <button type="button" class="btn btn-outline-success download-buttom"><i class="fa-brands fa-apple"></i>Download</button>
+  </div>
+  </section>
+
+  
+  <footer id="footer">
+    <i class="footer-icon fa-brands fa-twitter"></i>
+    <i class="footer-icon fa-brands fa-youtube"></i>
+    <i class="footer-icon fa-brands fa-instagram"></i>
+    <i class="footer-icon fa-brands fa-weibo"></i>
+    <p>@ Copyright 2018 18 Film Factory</p>
+  </footer>
+
+  
+  <script src="随便啦.js" charset="utf-8"></script>
+</body>
+</html>
